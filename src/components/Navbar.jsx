@@ -24,6 +24,9 @@ function Navbar() {
         <li>
           <Link to="/chatbot">Chatbot</Link>
         </li>
+        <li>
+          <Link to="/video">Video</Link>
+        </li>
       </ul>
     </nav>
        </div>

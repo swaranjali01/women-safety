@@ -7,6 +7,7 @@ import EmergencyAssistance from './pages/EmergencyAssistance';
 import TrackLocation from './pages/TrackLocation'; 
 import Community from './pages/Community'; 
 import Chatbot from './pages/Chatbot'; 
+import Video from './pages/Video';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/track-location" element={<TrackLocation />} />
         <Route path="/community" element={<Community />} />
         <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/video" element={<Video />} />
       </Routes>
     </>
   );
