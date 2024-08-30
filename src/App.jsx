@@ -10,18 +10,18 @@ import Chatbot from './pages/Chatbot';
 
 function App() {
   return (
-    <Router>
-     <Navbar />
+    <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} />
         <Route path="/incident-reporting" element={<IncidentReporting />} />
         <Route path="/emergency-assistance" element={<EmergencyAssistance />} />
         <Route path="/track-location" element={<TrackLocation />} />
         <Route path="/community" element={<Community />} />
         <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
-export default App;
+export default App;;
