@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 const VideoLayout = () => {
   const videos = [
     { id: 1, title: "Video 1", src: "https://youtu.be/domt_Sx-wTY?si=33Y3srnxCR6sOnaZ" },
