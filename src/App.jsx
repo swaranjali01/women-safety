@@ -8,6 +8,12 @@ import EmergencyAssistance from './pages/EmergencyAssistance';
 import TrackLocation from './pages/TrackLocation'; 
 import Community from './pages/Community'; 
 import Chatbot from './pages/Chatbot'; 
+import Forums from './pages/Forums';
+import Resources from './pages/Resources';
+import Events from './pages/Events';
+import Stories from './pages/Stories';
+
+
 // import Video from './pages/Video';
 
 
@@ -25,6 +31,10 @@ function App() {
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/login" element={<Login />} />
         {/* <Route path="/video" element={<Video />} /> */}
+        <Route path="/forums" component={Forums} />
+        <Route path="/resources" component={Resources} />
+        <Route path="/events" component={Events} />
+        <Route path="/stories" component={Stories} />
       </Routes>
     </>
   );

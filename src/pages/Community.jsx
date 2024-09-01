@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
 
-const CommunityPage = () => {
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+const Community = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeTab, setActiveTab] = useState('forums');
 
@@ -30,32 +32,73 @@ const CommunityPage = () => {
       </div>
 
       <div style={{ marginBottom: '1rem' }}>
-        {['forums', 'resources', 'events', 'stories'].map((tab) => (
+        <Link to="/forums">
           <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
             style={{
               padding: '0.5rem 1rem',
               marginRight: '0.5rem',
-              backgroundColor: activeTab === tab ? '#007bff' : '#f8f9fa',
-              color: activeTab === tab ? 'white' : 'black',
+              backgroundColor: activeTab === 'forums' ? '#007bff' : '#f8f9fa',
+              color: activeTab === 'forums' ? 'white' : 'black',
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer'
             }}
           >
-            {tab.charAt(0).toUpperCase() + tab.slice(1)}
+            Forums
           </button>
-        ))}
+        </Link>
+        <Link to="/resources">
+          <button
+            style={{
+              padding: '0.5rem 1rem',
+              marginRight: '0.5rem',
+              backgroundColor: activeTab === 'resources' ? '#007bff' : '#f8f9fa',
+              color: activeTab === 'resources' ? 'white' : 'black',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            Resources
+          </button>
+        </Link>
+        <Link to="/events">
+          <button
+            style={{
+              padding: '0.5rem 1rem',
+              marginRight: '0.5rem',
+              backgroundColor: activeTab === 'events' ? '#007bff' : '#f8f9fa',
+              color: activeTab === 'events' ? 'white' : 'black',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            Events
+          </button>
+        </Link>
+        <Link to="/stories">
+          <button
+            style={{
+              padding: '0.5rem 1rem',
+              marginRight: '0.5rem',
+              backgroundColor: activeTab === 'stories' ? '#007bff' : '#f8f9fa',
+              color: activeTab === 'stories' ? 'white' : 'black',
+              border: 'none',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            Stories
+          </button>
+        </Link>
       </div>
 
       <div style={{ marginBottom: '1rem' }}>
-        {activeTab === 'forums' && <p>Forum content here...</p>}
-        {activeTab === 'resources' && <p>Resources content here...</p>}
-        {activeTab === 'events' && <p>Events content here...</p>}
-        {activeTab === 'stories' && <p>Stories content here...</p>}
+        <p>Select a tab to view content...</p>
       </div>
 
+      
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem' }}>
         {features.map((feature, index) => (
           <div key={index} style={{ border: '1px solid #ddd', borderRadius: '4px', padding: '1rem' }}>
@@ -79,8 +122,10 @@ const CommunityPage = () => {
           </div>
         ))}
       </div>
+
+      {/* No need to show the content here, as it's handled by separate pages now */}
     </div>
   );
 };
 
-export default CommunityPage;
+export default Community;
