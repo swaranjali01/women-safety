@@ -6,7 +6,7 @@ const Events = () => {
     { id: 1, type: 'webinar', title: 'Understanding Your Legal Rights', date: '2024-09-15', time: '14:00', speaker: 'Jane Doe, Lawyer', description: 'Learn about your legal rights and how to protect yourself in various situations.' },
     { id: 2, type: 'local', title: 'Self-Defense Workshop', date: '2024-09-20', time: '10:00', location: 'City Community Center', description: 'Hands-on workshop teaching basic self-defense techniques.' },
     { id: 3, type: 'qa', title: 'Mental Health Q&A', date: '2024-09-25', time: '18:00', speaker: 'Dr. Emily Smith, Psychologist', description: 'Live Q&A session on coping with stress and anxiety.' },
-    // Add more events as needed
+   
   ]);
 
   const [filter, setFilter] = useState('all');
