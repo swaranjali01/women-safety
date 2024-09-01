@@ -12,7 +12,6 @@ import Forums from './pages/Forums';
 import Resources from './pages/Resources';
 import Events from './pages/Events';
 import Stories from './pages/Stories';
-
 import Signup from './pages/Signup';
 
 function App() {
@@ -29,10 +28,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         {/* <Route path="/video" element={<Video />} /> */}
-        <Route path="/forums" component={Forums} />
-        <Route path="/resources" component={Resources} />
-        <Route path="/events" component={Events} />
-        <Route path="/stories" component={Stories} />
+        <Route path="/forums" element={ <Forums />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/stories" element={<Stories />} />
       </Routes>
     </>
   );
