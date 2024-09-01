@@ -5,7 +5,7 @@ import {
   AiOutlineAlert,
   AiOutlineFileProtect,
   AiOutlineSafety,
-} from "react-icons/ai"; 
+} from "react-icons/ai";
 
 function Home() {
   return (
@@ -13,14 +13,14 @@ function Home() {
       <div className="container mx-auto p-4">
         {/* Hero Section */}
         <div
-  className="relative bg-cover bg-center h-[60vh] w-full flex flex-col justify-center items-center text-center text-white p-6 mt-6 rounded-lg shadow-lg"
-  style={{
-    backgroundImage: "url('https://i.pinimg.com/564x/f0/2a/d5/f02ad5979696537aa97f7a38fb446f66.jpg')",
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-
+          className="relative bg-cover bg-center h-[60vh] w-full flex flex-col justify-center items-center text-center text-white p-6 mt-6 rounded-lg shadow-lg"
+          style={{
+            backgroundImage:
+              "url('https://i.pinimg.com/564x/f0/2a/d5/f02ad5979696537aa97f7a38fb446f66.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="absolute inset-0 bg-black opacity-85 rounded-lg"></div>
 
           <div className="relative z-10">
@@ -44,7 +44,6 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature Card */}
             <div className="relative group bg-gradient-to-r from-blue-500 to-purple-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-              
               <AiOutlineRobot className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 AI-Powered Chatbot
@@ -55,7 +54,6 @@ function Home() {
               </p>
             </div>
             <div className="relative group bg-gradient-to-r from-green-500 to-teal-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-              
               <AiOutlineSafety className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 Emergency Assistance
@@ -66,7 +64,6 @@ function Home() {
               </p>
             </div>
             <div className="relative group bg-gradient-to-r from-red-500 to-pink-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-              
               <AiOutlineAlert className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 Report an Incident
@@ -77,7 +74,6 @@ function Home() {
               </p>
             </div>
             <div className="relative group bg-gradient-to-r from-yellow-500 to-orange-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-             
               <AiOutlineFileProtect className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 Community Support
@@ -88,7 +84,6 @@ function Home() {
               </p>
             </div>
             <div className="relative group bg-gradient-to-r from-purple-500 to-indigo-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-
               <AiOutlineSafety className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 Safety Videos
@@ -99,7 +94,6 @@ function Home() {
               </p>
             </div>
             <div className="relative group bg-gradient-to-r from-pink-500 to-red-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-              
               <AiOutlineAlert className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
                 Red Zone Alerts
