@@ -8,6 +8,7 @@ import EmergencyAssistance from './pages/EmergencyAssistance';
 import TrackLocation from './pages/TrackLocation'; 
 import Community from './pages/Community'; 
 import Chatbot from './pages/Chatbot'; 
+import Signup from './pages/Signup';
 // import Video from './pages/Video';
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         {/* <Route path="/video" element={<Video />} /> */}
       </Routes>
     </>
