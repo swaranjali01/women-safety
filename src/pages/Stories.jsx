@@ -19,7 +19,7 @@ const Stories = () => {
 
   return (
     <div className="community-page">
-      <header className="bg-purple-600 text-white p-4">
+      <header className="bg-blue-600 text-white p-4 text-center">
         <h1 className="text-2xl font-bold">Women's Safety Community</h1>
       </header>
 

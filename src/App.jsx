@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'; 
 import Home from './pages/Home'; 
 import Login from './pages/Login';
@@ -23,7 +23,7 @@ function App() {
         <Route path="/incident-reporting" element={<IncidentReporting />} />
         <Route path="/emergency-assistance" element={<EmergencyAssistance />} />
         <Route path="/track-location" element={<TrackLocation />} />
-        <Route path="/" component={Community} />
+        <Route path="/community" element={<Community />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

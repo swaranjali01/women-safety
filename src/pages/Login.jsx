@@ -1,47 +1,45 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineUser } from 'react-icons/ai';
 
 const Login = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="w-96 bg-white p-8 rounded-lg shadow-md">
-        <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
-          <img
-            src="https://img.icons8.com/material-outlined/24/000000/user.png"
-            alt="user icon"
-          />
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md bg-white p-10 rounded-xl shadow-lg">
+        <div className="flex justify-center mb-6">
+        <div className="w-16 h-16  rounded-full flex items-center justify-center">
+          <AiOutlineUser className="w-16 h-16 rounded-full border-2 border-gray-300 bg-slate-50" />
+          </div>
         </div>
-        <h1 className="text-4xl font-semibold mb-6 text-center">Login Here</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">Welcome Back</h1>
         <form>
-          <div className="mb-4">
-          
+          <div className="mb-6">
             <input
               type="email"
               placeholder="Enter your email"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"
+              className="w-full px-4 py-3 text-gray-800 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
               required
             />
           </div>
-          <div className="mb-6">
-          
+          <div className="mb-8">
             <input
               type="password"
               placeholder="Enter your password"
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"
+              className="w-full px-4 py-3 text-gray-800 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
               required
             />
           </div>
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg"
+            className="w-full py-3 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 transition duration-300"
           >
             Login
           </button>
         </form>
-        <p className="mt-6 text-center text-sm">
+        <p className="mt-8 text-center text-sm text-gray-600">
           New here?
           <Link to="/signup" className="text-blue-500">
-            Signup
+            Sign up
           </Link>
         </p>
       </div>

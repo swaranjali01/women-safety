@@ -1,51 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineUser } from 'react-icons/ai';
 
 const Signup = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-purple-100">
-      <div className="w-full max-w-sm p-8 space-y-6 bg-white rounded-lg shadow-lg">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-2xl">
         <div className="flex justify-center">
-          <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
-            <img
-              src="https://img.icons8.com/material-outlined/24/000000/user.png"
-              alt="user icon"
-            />
+          <div className="w-16 h-16 rounded-full flex items-center justify-center">
+            <AiOutlineUser className="w-16 h-16 rounded-full border-2 border-gray-300 bg-slate-50" />
           </div>
         </div>
-        <h2 className="text-2xl font-semibold text-center text-gray-800">SignUp</h2>
-        <form className="space-y-4">
+        <h2 className="text-3xl font-bold text-center text-gray-800">Create an Account</h2>
+        <form className="space-y-5">
           <input
             type="text"
             placeholder="Enter your Name"
-            className="w-full px-4 py-2 text-center text-gray-800 bg-gray-200 rounded-md "
+            className="w-full px-4 py-2 text-gray-800 bg-gray-100 border-b-2 border-gray-300 rounded-none focus:border-blue-500 transition duration-300"
           />
           <input
             type="email"
             placeholder="Enter Your Email"
-            className="w-full px-4 py-2 text-center text-gray-800 bg-gray-200 rounded-md "
+            className="w-full px-4 py-2 text-gray-800 bg-gray-100 border-b-2 border-gray-300 rounded-none focus:border-blue-500 transition duration-300"
           />
           <input
-            type="text"
+            type="password"
             placeholder="Create Password"
-            className="w-full px-4 py-2 text-center text-gray-800 bg-gray-200 rounded-md "
+            className="w-full px-4 py-2 text-gray-800 bg-gray-100 border-b-2 border-gray-300 rounded-none focus:border-blue-500 transition duration-300"
           />
           <input
-            type="text"
+            type="password"
             placeholder="Confirm Password"
-            className="w-full px-4 py-2 text-center text-gray-800 bg-gray-200 rounded-md "
+            className="w-full px-4 py-2 text-gray-800 bg-gray-100 border-b-2 border-gray-300 rounded-none focus:border-blue-500 transition duration-300"
           />
           <button
             type="submit"
-          className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg"
+            className="w-full py-3 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 transition duration-300"
           >
-            SignUp
+            Sign Up
           </button>
         </form>
         <p className="text-center text-gray-600">
-        <Link to="/login" className="text-blue-500">
-            Login
-          </Link> if you have an Account
+          Already have an account?{' '}
+          <Link to="/login" className="text-blue-500">
+            Log in
+          </Link>
         </p>
       </div>
     </div>
