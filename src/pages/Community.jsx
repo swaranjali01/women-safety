@@ -85,11 +85,11 @@ const Community = () => {
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer'
-            }}
-          >
+            }}>
             Stories
           </button>
         </Link>
+        
       </div>
 
       <div style={{ marginBottom: '1rem' }}>
