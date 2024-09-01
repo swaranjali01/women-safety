@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <div className="bg-white">
-        <nav className="flex items-center justify-between p-4">
+        <nav className="flex items-center justify-between p-4 ">
           <p className="text-black font-bold">BSafe</p>
 
           <ul className="flex justify-between gap-8">
@@ -38,9 +38,9 @@ function Navbar() {
               alt="Profile"
               className="h-6 w-6 rounded-full"
             />
-            <button className="bg-blue-500 text-white h-9 w-16 rounded-lg">
-              Login
-            </button>
+          <button className="bg-blue-500 text-white h-9 w-16 rounded-lg">
+              <Link to="/login">Login</Link>
+          </button>
           </div>
         </nav>
       </div>

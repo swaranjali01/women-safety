@@ -23,7 +23,6 @@ function App() {
         <Route path="/community" element={<Community />} />
         <Route path="/chatbot" element={<Chatbot />} />
         {/* <Route path="/video" element={<Video />} /> */}
-        
       </Routes>
     </>
   );
