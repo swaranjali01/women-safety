@@ -5,11 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'offwhite': '#FAF9F6',
-    },
+   
     extend: {},
   },
   plugins: [],
