@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'; 
 import Home from './pages/Home'; 
+import Login from './pages/Login';
 import IncidentReporting from './pages/IncidentReporting'; 
 import EmergencyAssistance from './pages/EmergencyAssistance'; 
 import TrackLocation from './pages/TrackLocation'; 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/track-location" element={<TrackLocation />} />
         <Route path="/community" element={<Community />} />
         <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/login" element={<Login />} />
         {/* <Route path="/video" element={<Video />} /> */}
       </Routes>
     </>

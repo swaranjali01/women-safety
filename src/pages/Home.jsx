@@ -23,7 +23,7 @@ function Home() {
               Instant access to emergency services, support, and resources.
             </h3>
             <button className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg">
-              <Link to="/login">Get Started</Link>
+              <Link to="/Login">Get Started</Link>
             </button>
           </div>
         </div>
