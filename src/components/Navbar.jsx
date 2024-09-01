@@ -27,9 +27,9 @@ function Navbar() {
             <li>
               <Link to="/chatbot">Chatbot</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/video">Video</Link>
-            </li>
+            </li> */}
           </ul>
 
           <div className="flex items-center gap-4">
