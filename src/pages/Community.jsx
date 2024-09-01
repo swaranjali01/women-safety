@@ -1,10 +1,8 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Community = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeTab, setActiveTab] = useState('forums');
 
   const features = [
     { icon: '💬', title: 'Discussion Forums', description: 'Connect and share experiences' },
@@ -37,8 +35,8 @@ const Community = () => {
             style={{
               padding: '0.5rem 1rem',
               marginRight: '0.5rem',
-              backgroundColor: activeTab === 'forums' ? '#007bff' : '#f8f9fa',
-              color: activeTab === 'forums' ? 'white' : 'black',
+              backgroundColor: '#f8f9fa',
+              color: '#007bff',
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer'
@@ -52,8 +50,8 @@ const Community = () => {
             style={{
               padding: '0.5rem 1rem',
               marginRight: '0.5rem',
-              backgroundColor: activeTab === 'resources' ? '#007bff' : '#f8f9fa',
-              color: activeTab === 'resources' ? 'white' : 'black',
+              backgroundColor: '#f8f9fa',
+              color: '#007bff',
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer'
@@ -67,8 +65,8 @@ const Community = () => {
             style={{
               padding: '0.5rem 1rem',
               marginRight: '0.5rem',
-              backgroundColor: activeTab === 'events' ? '#007bff' : '#f8f9fa',
-              color: activeTab === 'events' ? 'white' : 'black',
+              backgroundColor: '#f8f9fa',
+              color: '#007bff',
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer'
@@ -82,8 +80,8 @@ const Community = () => {
             style={{
               padding: '0.5rem 1rem',
               marginRight: '0.5rem',
-              backgroundColor: activeTab === 'stories' ? '#007bff' : '#f8f9fa',
-              color: activeTab === 'stories' ? 'white' : 'black',
+              backgroundColor: '#f8f9fa',
+              color: '#007bff',
               border: 'none',
               borderRadius: '4px',
               cursor: 'pointer'
@@ -98,7 +96,6 @@ const Community = () => {
         <p>Select a tab to view content...</p>
       </div>
 
-      
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem' }}>
         {features.map((feature, index) => (
           <div key={index} style={{ border: '1px solid #ddd', borderRadius: '4px', padding: '1rem' }}>
@@ -122,8 +119,6 @@ const Community = () => {
           </div>
         ))}
       </div>
-
-      {/* No need to show the content here, as it's handled by separate pages now */}
     </div>
   );
 };
