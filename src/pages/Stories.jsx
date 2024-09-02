@@ -67,7 +67,7 @@ const Stories = () => {
                 className="w-full p-2 border rounded h-32"
                 required
               />
-              <button type="submit" className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+              <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-purple-600">
                 Submit Story
               </button>
             </form>
