@@ -29,7 +29,7 @@ const Stories = () => {
           
           <div className="stories-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {stories.map(story => (
-              <div key={story.id} className="story-card border rounded-lg overflow-hidden">
+              <div key={story.id} className="story-card bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
                 {story.type === 'video' && (
                   <img src={story.mediaUrl} alt={story.title} className="w-full h-40 object-cover" />
                 )}
