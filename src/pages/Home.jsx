@@ -7,6 +7,7 @@ import {
   AiOutlineSafety,
 } from "react-icons/ai";
 
+
 function Home() {
   return (
     <>

@@ -12,6 +12,7 @@ import Events from './pages/Events';
 import Stories from './pages/Stories';
 import Signup from './pages/Signup';
 import Sosbtn from './components/Sosbtn';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/events" element={<Events />} />
         <Route path="/stories" element={<Stories />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </>
   );
