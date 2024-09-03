@@ -11,11 +11,13 @@ import Resources from './pages/Resources';
 import Events from './pages/Events';
 import Stories from './pages/Stories';
 import Signup from './pages/Signup';
+import Sosbtn from './components/Sosbtn';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Sosbtn />
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/incident-reporting" element={<IncidentReporting />} />
