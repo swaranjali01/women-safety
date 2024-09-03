@@ -38,7 +38,7 @@ const Profile = () => {
         <p className="text-center text-gray-600">Email: {email}</p>
         <p className="text-center text-gray-600">Mobile: {mobile}</p>
 
-        <h3 className="text-lg font-semibold mt-6">Emergency Contacts</h3>
+        <h3 className="text-lg font-semibold text-center mt-6">Emergency Contacts</h3>
         {emergencyContacts.map((contact, index) => (
           <div key={index} className="flex items-center space-x-2 mb-2">
             <input
