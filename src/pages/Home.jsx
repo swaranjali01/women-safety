@@ -83,6 +83,15 @@ function Home() {
                 and advice.
               </p>
             </div>
+            <div className="relative group bg-gradient-to-r from-pink-500 to-red-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+              <AiOutlineAlert className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
+              <h3 className="text-2xl font-semibold mb-4 text-white">
+                Red Zone Alerts
+              </h3>
+              <p className="text-white">
+                Receive alerts about high-risk areas and avoid unsafe zones.
+              </p>
+            </div>
             <div className="relative group bg-gradient-to-r from-purple-500 to-indigo-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
               <AiOutlineSafety className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
               <h3 className="text-2xl font-semibold mb-4 text-white">
@@ -93,15 +102,7 @@ function Home() {
                 to stay informed.
               </p>
             </div>
-            <div className="relative group bg-gradient-to-r from-pink-500 to-red-600 p-8 h-80 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 hover:shadow-2xl">
-              <AiOutlineAlert className="text-white text-5xl mb-4 group-hover:rotate-12 transition duration-300" />
-              <h3 className="text-2xl font-semibold mb-4 text-white">
-                Red Zone Alerts
-              </h3>
-              <p className="text-white">
-                Receive alerts about high-risk areas and avoid unsafe zones.
-              </p>
-            </div>
+           
           </div>
         </div>
       </div>
