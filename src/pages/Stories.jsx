@@ -5,34 +5,34 @@ const Stories = () => {
     { 
       id: 1, 
       type: 'video', 
-      mediaUrl: 'https://www.youtube.com/embed/HIoj7DHmuEI', // YouTube link for Stay Safe While Jogging
+      mediaUrl: 'https://www.youtube.com/embed/HIoj7DHmuEI', 
       title: 'Stay Safe While Jogging', 
       author: 'Jane Doe', 
       likes: 120, 
       comments: 15,
-      isPlaying: false // State to track if the video is playing
+      isPlaying: false 
     },
     { 
       id: 2, 
       type: 'video', 
-      mediaUrl: 'https://www.youtube.com/embed/videoseries?list=PLHfTPxnG4fWq1Wa1vAt8NXnsr9pGmGvQ3', // YouTube link for Self-Defense Basics
+      mediaUrl: 'https://www.youtube.com/embed/videoseries?list=PLHfTPxnG4fWq1Wa1vAt8NXnsr9pGmGvQ3',
       title: 'Self-Defense Basics', 
       author: 'Alice Smith', 
       likes: 98, 
       comments: 22,
-      isPlaying: false // State to track if the video is playing
+      isPlaying: false 
     },
     { 
       id: 3, 
       type: 'video', 
-      mediaUrl: 'https://www.youtube.com/embed/-zAEj8LTBdI', // YouTube link for Situational Awareness
+      mediaUrl: 'https://www.youtube.com/embed/-zAEj8LTBdI', 
       title: 'Situational Awareness', 
       author: 'Emily Brown', 
       likes: 75, 
       comments: 8,
-      isPlaying: false // State to track if the video is playing
+      isPlaying: false 
     },
-    // Add more stories as needed
+
   ]);
 
   const [newStory, setNewStory] = useState({ title: '', content: '', type: 'text' });
@@ -65,7 +65,7 @@ const Stories = () => {
               <div 
                 key={story.id} 
                 className="story-card bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer"
-                onClick={() => story.type === 'video' && handlePlayVideo(story.id)} // Play video on click
+                onClick={() => story.type === 'video' && handlePlayVideo(story.id)} 
               >
                 {story.isPlaying && story.type === 'video' ? (
                   <iframe 

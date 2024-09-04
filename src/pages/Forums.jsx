@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-// Sample data for categories and threads
 const categories = [
   { id: 1, title: 'Safety Tips' },
   { id: 2, title: 'Self-Defense' },

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Sample data for articles and resources
+
 const articles = [
   {
     title: "Safety Tips for Women",
