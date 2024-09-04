@@ -13,6 +13,7 @@ import Stories from './pages/Stories';
 import Signup from './pages/Signup';
 import Sosbtn from './components/Sosbtn';
 import Profile from './components/Profile';
+import RedZone from './pages/RedZone.jsx';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/stories" element={<Stories />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/RedZone" element={<RedZone />} />
       </Routes>
     </>
   );

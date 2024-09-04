@@ -42,6 +42,14 @@ function Navbar() {
                 Chatbot
               </Link>
             </li>
+            <li>
+              <Link
+                to="/RedZone"
+                className="text-gray-300 hover:text-white transition duration-300"
+              >
+                RedZone
+              </Link>
+            </li>
           </ul>
 
           <div className="flex items-center gap-4">
