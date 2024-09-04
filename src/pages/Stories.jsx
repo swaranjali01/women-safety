@@ -2,9 +2,36 @@ import React, { useState } from 'react';
 
 const Stories = () => {
   const [stories, setStories] = useState([
-    { id: 1, type: 'video', mediaUrl: '/api/placeholder/320/180', title: 'Stay Safe While Jogging', author: 'Jane Doe', likes: 120, comments: 15 },
-    { id: 2, type: 'image', mediaUrl: '/api/placeholder/320/180', title: 'Self-Defense Basics', author: 'Alice Smith', likes: 98, comments: 22 },
-    { id: 3, type: 'text', content: 'Remember to always be aware of your surroundings...', title: 'Situational Awareness', author: 'Emily Brown', likes: 75, comments: 8 },
+    { 
+      id: 1, 
+      type: 'video', 
+      mediaUrl: 'https://www.youtube.com/embed/HIoj7DHmuEI', // YouTube link for Stay Safe While Jogging
+      title: 'Stay Safe While Jogging', 
+      author: 'Jane Doe', 
+      likes: 120, 
+      comments: 15,
+      isPlaying: false // State to track if the video is playing
+    },
+    { 
+      id: 2, 
+      type: 'video', 
+      mediaUrl: 'https://www.youtube.com/embed/videoseries?list=PLHfTPxnG4fWq1Wa1vAt8NXnsr9pGmGvQ3', // YouTube link for Self-Defense Basics
+      title: 'Self-Defense Basics', 
+      author: 'Alice Smith', 
+      likes: 98, 
+      comments: 22,
+      isPlaying: false // State to track if the video is playing
+    },
+    { 
+      id: 3, 
+      type: 'video', 
+      mediaUrl: 'https://www.youtube.com/embed/-zAEj8LTBdI', // YouTube link for Situational Awareness
+      title: 'Situational Awareness', 
+      author: 'Emily Brown', 
+      likes: 75, 
+      comments: 8,
+      isPlaying: false // State to track if the video is playing
+    },
     // Add more stories as needed
   ]);
 
@@ -15,6 +42,12 @@ const Stories = () => {
     const newId = stories.length + 1;
     setStories([...stories, { ...newStory, id: newId, author: 'Anonymous', likes: 0, comments: 0 }]);
     setNewStory({ title: '', content: '', type: 'text' });
+  };
+
+  const handlePlayVideo = (id) => {
+    setStories(stories.map(story => 
+      story.id === id ? { ...story, isPlaying: !story.isPlaying } : story
+    ));
   };
 
   return (
@@ -29,12 +62,25 @@ const Stories = () => {
           
           <div className="stories-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {stories.map(story => (
-              <div key={story.id} className="story-card bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
-                {story.type === 'video' && (
-                  <img src={story.mediaUrl} alt={story.title} className="w-full h-40 object-cover" />
-                )}
-                {story.type === 'image' && (
-                  <img src={story.mediaUrl} alt={story.title} className="w-full h-40 object-cover" />
+              <div 
+                key={story.id} 
+                className="story-card bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 cursor-pointer"
+                onClick={() => story.type === 'video' && handlePlayVideo(story.id)} // Play video on click
+              >
+                {story.isPlaying && story.type === 'video' ? (
+                  <iframe 
+                    width="100%" 
+                    height="180" 
+                    src={story.mediaUrl} 
+                    title={story.title} 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen 
+                  />
+                ) : (
+                  <div className="h-40 bg-gray-200 flex items-center justify-center">
+                    <span className="text-gray-500">Click to play video</span>
+                  </div>
                 )}
                 <div className="p-4">
                   <h3 className="font-semibold">{story.title}</h3>
