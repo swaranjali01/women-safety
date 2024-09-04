@@ -56,12 +56,6 @@ function Navbar() {
             <Link to="/profile">
                <AiOutlineUser className="h-8 w-8 rounded-full border-2 border-gray-300 bg-slate-50" /> 
             </Link>
-            <Link
-              to="/login"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-md transition duration-300"
-            >
-              Login
-            </Link>
           </div>
         </nav>
       </div>

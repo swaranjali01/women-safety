@@ -6,11 +6,13 @@ import {
   AiOutlineFileProtect,
   AiOutlineSafety,
 } from "react-icons/ai";
+// import Landingpage from "../components/Landingpage";
 
 
 function Home() {
   return (
     <>
+    {/* <Landingpage /> */}
       <div className="container mx-auto p-4">
         {/* Hero Section */}
         <div
@@ -31,9 +33,7 @@ function Home() {
             <h3 className="text-lg md:text-2xl font-medium mb-8">
               Instant access to emergency services, support, and resources.
             </h3>
-            <button className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
-              <Link to="/Login">Get Started</Link>
-            </button>
+            
           </div>
         </div>
 
