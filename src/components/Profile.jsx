@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
 
 const Profile = () => {
-  const [name, setName] = useState('John Doe'); // Example name
-  const [age, setAge] = useState(30); // Example age
-  const [email, setEmail] = useState('john.doe@example.com'); // Example email
-  const [mobile, setMobile] = useState('123-456-7890'); // Example mobile number
-  const [emergencyContacts, setEmergencyContacts] = useState(['', '', '', '', '']); // Array for emergency contacts
-  const [isEditing, setIsEditing] = useState(false); // State to toggle edit mode
+  const [name, setName] = useState('John Doe'); 
+  const [age, setAge] = useState(30); 
+  const [email, setEmail] = useState('john.doe@example.com'); 
+  const [mobile, setMobile] = useState('123-456-7890'); 
+  const [emergencyContacts, setEmergencyContacts] = useState(['', '', '', '', '']); 
+  const [isEditing, setIsEditing] = useState(false); 
 
   const handleEmergencyContactChange = (index, value) => {
     const updatedContacts = [...emergencyContacts];

@@ -6,7 +6,7 @@ import {
   AiOutlineFileProtect,
   AiOutlineSafety,
 } from "react-icons/ai";
-// import Landingpage from "../components/Landingpage";
+
 
 
 function Home() {
