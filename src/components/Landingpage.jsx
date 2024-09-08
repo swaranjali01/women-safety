@@ -15,7 +15,6 @@ function Home() {
     <>
           <Landingnavbar />
       <div className="container mx-auto p-4">
-        {/* Hero Section */}
         <div
           className="relative bg-cover bg-center h-[60vh] w-full flex flex-col justify-center items-center text-center text-white p-6 mt-6 rounded-lg shadow-lg"
           style={{
