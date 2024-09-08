@@ -1,72 +1,73 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Community = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-
   const features = [
-    { icon: '💬', title: 'Discussion Forums', description: 'Connect and share experiences' },
-    { icon: '📚', title: 'Articles and Resources', description: 'Access helpful information' },
-    { icon: '📅', title: 'Events and Workshops', description: 'Join community activities' },
-    { icon: '❤️', title: 'Inspirational Stories', description: 'Read uplifting experiences' },
-    { icon: '👥', title: 'Support Groups', description: 'Find mutual support' },
-    { icon: '❓', title: 'Help and FAQ', description: 'Get answers to common questions' },
-    { icon: '🚨', title: 'Reporting and Feedback', description: 'Help improve our community' },
-    { icon: '🎓', title: 'Learning Modules', description: 'Enhance your knowledge and skills' },
+    {
+      icon: "💬",
+      title: "Discussion Forums",
+      description: "Connect and share experiences",
+      link: "/forums",
+    },
+    {
+      icon: "📚",
+      title: "Articles and Resources",
+      description: "Access helpful information",
+      link: "/resources",
+    },
+    {
+      icon: "📅",
+      title: "Events and Workshops",
+      description: "Join community activities",
+      link: "/events",
+    },
+    {
+      icon: "❤️",
+      title: "Inspirational Stories",
+      description: "Read uplifting experiences",
+      link: "/Stories",
+    },
+    {
+      icon: "🎓",
+      title: "Learning Modules",
+      description: "Enhance your knowledge and skills",
+      link: "/Modules"
+    },
   ];
 
   return (
-    <div className="community-page max-w-5xl mx-auto p-6">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Our Community</h1>
-      
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search the community..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full p-2 border rounded"
-        />
-      </div>
+    <div className="community-page max-w-6xl mx-auto p-8">
+      <h1 className="text-4xl font-extrabold mb-8 text-center text-gray-800">
+        Welcome to Our Community
+      </h1>
 
-      <div className="mb-4">
-        <Link to="/forums">
-          <button className="bg-gray-200 text-blue-600 px-4 py-2 rounded mr-2 hover:bg-gray-300">
-            Forums
-          </button>
-        </Link>
-        <Link to="/resources">
-          <button className="bg-gray-200 text-blue-600 px-4 py-2 rounded mr-2 hover:bg-gray-300">
-            Resources
-          </button>
-        </Link>
-        <Link to="/events">
-          <button className="bg-gray-200 text-blue-600 px-4 py-2 rounded mr-2 hover:bg-gray-300">
-            Events
-          </button>
-        </Link>
-        <Link to="/stories">
-          <button className="bg-gray-200 text-blue-600 px-4 py-2 rounded hover:bg-gray-300">
-            Stories
-          </button>
-        </Link>
-      </div>
-
-      <div className="mb-4">
-        <p>Select a tab to view content...</p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature, index) => (
-          <div key={index} className="feature-card bg-white shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105">
-            <h3 className="flex items-center mb-2">
-              <span className="mr-2 text-2xl">{feature.icon}</span>
-              <span className="font-semibold">{feature.title}</span>
-            </h3>
-            <p className="mb-2">{feature.description}</p>
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-              Explore
-            </button>
+          <div
+            key={index}
+            className="feature-card bg-white shadow-xl rounded-lg p-6 transform transition-transform hover:scale-105 hover:shadow-2xl"
+          >
+            <div className="flex items-center mb-4">
+              <span className="text-4xl mr-3">{feature.icon}</span>
+              <h3 className="text-xl font-semibold text-gray-900">
+                {feature.title}
+              </h3>
+            </div>
+            <p className="text-gray-700 mb-4">{feature.description}</p>
+            {feature.link ? (
+              <Link to={feature.link}>
+                <button className="bg-blue-600 text-white px-5 py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                  Explore
+                </button>
+              </Link>
+            ) : (
+              <button
+                className="bg-gray-400 text-white px-5 py-3 rounded-lg cursor-not-allowed"
+                disabled
+              >
+                Coming Soon
+              </button>
+            )}
           </div>
         ))}
       </div>
