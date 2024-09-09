@@ -13,7 +13,7 @@ import Landingnavbar from "../components/Landingnavbar";
 function Home() {
   return (
     <>
-          <Landingnavbar />
+    
       <div className="container mx-auto p-4">
         <div
           className="relative bg-cover bg-center h-[60vh] w-full flex flex-col justify-center items-center text-center text-white p-6 mt-6 rounded-lg shadow-lg"

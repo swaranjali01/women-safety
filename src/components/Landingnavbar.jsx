@@ -10,18 +10,6 @@ const Landingnavbar = () => {
         <nav className="flex items-center justify-between p-4">
           <p className="text-white text-xl font-bold">BSafe</p>
 
-          <ul className="flex justify-between gap-8">
-            <li>
-              <Link
-                to="/"
-                className="text-gray-300 hover:text-white transition duration-300"
-              >
-                Home
-              </Link>
-            </li>
-           
-          </ul>
-
           <div className="flex items-center gap-4">
             <Link to="/login">
                <AiOutlineUser className="h-8 w-8 rounded-full border-2 border-gray-300 bg-slate-50" /> 

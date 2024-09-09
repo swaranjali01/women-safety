@@ -6,7 +6,7 @@ import Login from './pages/Login';
 import IncidentReporting from './pages/IncidentReporting'; 
 import Community from './pages/Community'; 
 import Chatbot from './pages/Chatbot'; 
-import Forums from './pages/Forums';
+// import Forums from './pages/Forums';
 import Resources from './pages/Resources';
 import Events from './pages/Events';
 import Stories from './pages/Stories';
@@ -28,7 +28,7 @@ function App() {
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/forums" element={ <Forums />} />
+        {/* <Route path="/forums" element={ <Forums />} /> */}
         <Route path="/resources" element={<Resources />} />
         <Route path="/events" element={<Events />} />
         <Route path="/stories" element={<Stories />} />

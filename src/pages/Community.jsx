@@ -4,12 +4,6 @@ import { Link } from "react-router-dom";
 const Community = () => {
   const features = [
     {
-      icon: "💬",
-      title: "Discussion Forums",
-      description: "Connect and share experiences",
-      link: "/forums",
-    },
-    {
       icon: "📚",
       title: "Articles and Resources",
       description: "Access helpful information",
